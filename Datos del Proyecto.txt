@@ -1,0 +1,11 @@
+Integrantes
+Nombre del Estudiante 01: Carlos Eduardo Granados Pretel
+Git Hub: https://github.com/edu0425/EPS1-Parte01.git
+
+Nombre del Estudiante 02: Edgar Raul Cusi Osccorima
+Git Hub: https://github.com/CusiTEC/EPS1-Parte02.git
+
+Nombre del Estudiante 03: Sebastian Timo Laura Antezana
+Git Hub: https://github.com/xixoa/EPS1-Parte03.git
+
+
