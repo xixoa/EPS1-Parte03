@@ -4,16 +4,9 @@ Created on Wed Jun  8 09:08:08 2022
 
 @author: alumno
 """
+import modulo
 
-def leer_archivo(nombre):
-    archivo = open(nombre,"rt",encoding='utf8')
-    contenido = archivo.read()
-    return contenido
 
-def agregar_archivo(nombre,contenido):
-    archivo = open (nombre, "at")
-    archivo.write("," + contenido)
-    archivo.close()
 
 
 def pedirUserandContra():
@@ -23,7 +16,7 @@ def pedirUserandContra():
         user = input("\nIngrese usuario: ")
         password = input("Ingrese contraseña:")
         
-        if(user == leer_archivo("login.txt") and password == leer_archivo("clave.txt")):                      
+        if(user == modulo.leer_archivo("login.txt") and password == modulo.leer_archivo("clave.txt")):                      
             menu() 
             break
         else:
@@ -34,8 +27,20 @@ def menu():
     print("1. Listar Persona")
     print("2. Agregar Persona")
     print("3. Salir")
+    opcion = 1
+    while opcion!=3:
+        opcion = int(input("\nSelecciones una opcion[1-3]: "))
+        
+        if opcion==1:
+            modulo.listar_personas()
+        elif opcion==2:
+            modulo.agregar_personas()    
+        elif opcion==3:
+            modulo.salir()
+        else:
+            modulo.error()
+        
     
-    
-    
-pedirUserandContra()
+pedirUserandContra()   
+
 
